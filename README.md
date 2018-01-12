@@ -17,7 +17,7 @@ docker run \
   -e QT_X11_NO_MITSHM=1 \
   -v /tmp/.X11-unix/:/tmp/.X11-unix:ro \
   -v ~/.XAuthority:/root/.Xauthority \
-  -v $PWD/data:/root/.XP --net host \
-  -p 28192:28192 \
+  -v ~/.XP-docker:/root/.XP \
+  --net host \
   330k/docker-xpwallet-qt
 ~~~
